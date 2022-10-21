@@ -4,9 +4,9 @@ public class RecordingDataService{
 
     private DatabasePostgres postgresDB;
 
-    public RecordingDataService(){
+    public RecordingDataService(DatabasePostgres database){
 
-        postgresDB = new DatabasePostgres();
+        this.postgresDB = database;
     }
 
     public void record(Data data) {

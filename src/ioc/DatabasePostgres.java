@@ -7,7 +7,7 @@ public class DatabasePostgres{
     }
 
     public void save(Data data) {
-        System.out.print("Je sauvegarde" + data.getValue());
+        System.out.print("Je sauvegarde:: " + data.getValue());
     }
 
 }
