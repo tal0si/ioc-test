@@ -1,7 +1,9 @@
-package ioc;
+package ioc.database;
 
 
-public class DatabasePostgres{
+import ioc.Data;
+
+public class DatabasePostgres implements Database{
 
     public DatabasePostgres(){
     }

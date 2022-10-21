@@ -1,16 +1,18 @@
 package ioc;
 
+import ioc.database.Database;
+
 public class RecordingDataService{
 
-    private DatabasePostgres postgresDB;
+    private Database database;
 
-    public RecordingDataService(DatabasePostgres database){
+    public RecordingDataService(Database database){
 
-        this.postgresDB = database;
+        this.database = database;
     }
 
     public void record(Data data) {
-        postgresDB.save(data);
+        database.save(data);
     }
 
 }
