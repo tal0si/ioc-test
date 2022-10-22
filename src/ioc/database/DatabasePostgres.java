@@ -18,7 +18,7 @@ public class DatabasePostgres implements Database{
     }
 
     public void save(Data data) {
-        System.out.print("Je sauvegarde:: " + data.getValue());
+        System.out.print("Je sauvegarde en postgres:: " + data.getValue());
     }
 
 }
